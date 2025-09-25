@@ -13,7 +13,7 @@ app.use(express.static('public'));
 
 // Rota para o lobby (sala de espera)
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 // Manipulando conexão dos jogadores
