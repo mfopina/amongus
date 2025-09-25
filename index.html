@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Among Us Clone</title>
+  <style>
+    /* Simples estilo para o lobby */
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    button { padding: 10px 20px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Lobby do Jogo</h1>
+  <input type="text" id="roomName" placeholder="Digite o nome da sala" />
+  <button id="createRoomBtn">Criar Sala</button>
+  <button id="joinRoomBtn">Entrar na Sala</button>
+  <div id="error"></div>
+  <div id="gameArea" style="display:none;">
+    <h2>Jogo Iniciado!</h2>
+    <button id="startGameBtn">Iniciar Jogo</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
